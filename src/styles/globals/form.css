@@ -1,0 +1,354 @@
+input,
+select,
+textarea,
+button,
+select {
+	outline: 0px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    height: 30px;
+    padding: initial 4px;
+    border-radius: 3px;
+    border: 1px solid var(--color-main);
+}
+textarea {
+  height: 60px;
+  padding: 4px;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    padding: initial 4px;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--color-grey);
+}
+button:active {
+    background-color: var(--color-black-8);
+}
+
+label {
+    color: var(--color-neutral-2);
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 4px;
+    display: block;
+}
+.label-pass {
+  position: relative;
+}
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox,
+.input-radio {
+  width: 20px;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+.msgAlertForm {
+  font-size: 13px;
+  color: red;
+}
+.input-share {
+  display: block;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  opacity: 0;
+}
+/* input search */
+.box-search {
+	position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.btn-input-search {
+  display: grid;
+	justify-content: center;
+	align-content: center;
+	width: 30px;
+	height: 30px;
+	background: var(--color-neutral);
+	cursor: pointer;
+	position: absolute;
+  right: -1px;
+  margin-bottom: 0px;
+  border: none;
+}
+.btn-input-search img {
+  width: 20px;
+}
+.btn-input-search:hover {
+  background: var(--color-neutral-2);
+}
+.btn-input-search:active {
+  background: var(--color-neutral);
+}
+/* input upload Basic*/
+.box-uploader {
+	position: relative;
+  display: flex;
+  width: 100%;
+	height: 30px;
+	border: 1px solid var(--color-neutral-2);
+  padding-left: 3px;
+  background-color: white;
+}
+.upload {
+	display: none;
+}
+.input-value {
+	width: 67%;
+	overflow: hidden;
+  white-space: nowrap;
+	text-overflow: ellipsis;
+	color: rgb(98, 98, 98);
+	font-size: 13px;
+  align-self: center;
+  padding-left: 3px;
+}
+.button-upload {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	width: 5em;
+	font-size: 1em;
+	height: 28px;
+	background: var(--color-neutral);
+	color: white;
+	cursor: pointer;
+	position: absolute;
+  right: 0;
+  margin-bottom: 0px;
+}
+.button-upload:hover {
+	background-color: var(--color-first);
+}
+.msg-alert-input-file {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+@media screen and (min-width: 640px) {
+  .msg-alert-input-file {
+    top: 30px;
+    left: 0;
+  }
+}
+@media screen and (min-width: 640px) {
+  .box-main-uploader {
+    grid-area: span 1 / span 2;
+  }
+}
+.button-upload-products {
+  color: var(--color-blue-2);
+  cursor: pointer;
+}
+.box-uploader-products {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 12px;
+  margin: auto;
+  padding: 10px 0px;
+}
+@media screen and (min-width: 640px) {
+  .box-uploader-products {
+    grid-template-columns: repeat(5, 100px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box-uploader-products {
+    grid-template-columns: repeat(8, 100px);
+  }
+}
+
+.box-input-image {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-neutral-5);
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.delet-input-upload {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-neutral-5);
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: .9;
+  color: var(--color-neutral);
+  font-weight: 700;
+}
+.delet-input-upload .img-delete {
+  width: 30px;
+}
+.box-input-image:hover > .delet-input-upload {
+  display: grid;
+}
+
+.image-product-upload {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+
+
+.title-form {
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-neutral-5);
+  padding: 4px 4px;
+}
+@media screen and (min-width: 640px) {
+  .title-form {
+    grid-area: span 1 / span 2;
+    pad: 0px;
+    background-color: white;
+  }
+}
+.title-form .t2 {
+  margin: 0px;
+  font-size: 20px;
+}
+.title-form a {
+  font-size: 13px;
+}
+
+
+
+/* formulario actualizacion del perfil */
+.form-profile {
+  display: grid;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 640px) {
+	.form-profile {
+    padding: 20px;
+    border: 1px solid var(--color-neutral-3);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+	.form-profile {
+    padding: 20px 60px;
+    column-gap: 60px;
+  }
+}
+@media screen and (min-width: 640px) {
+	.checkbox-repeat-address {
+    grid-area:  span 1 / span 2;
+  }
+}
+
+/* formulario cambio de estado */
+.form-status {
+ padding: 16px 16px 0px 16px;
+ display: grid;
+ row-gap: 16px;
+}
+
+/* formulario nuevo o edit producto */
+.box-color-new-product{
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.circle-color { 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-self: flex-end;
+  align-content: center;
+  margin-bottom: 5px;
+  border: 1px solid var(--color-neutral-4);
+}
+.box-size-quantity {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 90px;
+  column-gap: 16px;
+  align-items: center;
+}
+
+@media screen and (min-width: 640px) {
+	.texttarea-description-product {
+    grid-area:  span 1 / span 2;
+  }
+}
+.box-button-add-another {
+  height: 100%;
+  display: flex;
+  padding-top: 20px;
+}
+.button-add-another {
+  width: 40px;
+  font-size: 24px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  bottom: 4px;
+}
+.button-remove-another {
+  margin-left: 10px;
+}
+
+/* form pagos */
+.ul-info-banco {
+  margin: 8px 0px;
+}
+.info-banco img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 16px;
+}
+.info-banco p {
+  margin:  0px;
+  font-size: 15px;
+}
+.btn-finish-cart {
+  align-self: end;
+}
+
+/* form tipo de nuevo producto */
+.form-type-product {
+  margin: auto;
+  display: grid;
+  gap: 12px;
+  width: 320px;
+  padding: 10px 15px;
+  border: 1px solid var(--color-neutral-3);
+}
+
+
+/* recuperar clve */
+
+.form-recuperar-clave {
+  display: grid;
+  max-width: 360px;
+  gap: 12px;
+}

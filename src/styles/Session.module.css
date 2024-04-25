@@ -1,0 +1,23 @@
+.form_session {
+    background-color: var(--color-black);
+    box-shadow: 0px 0px 3px 0px var(--color-grey-6);
+    border-radius: 7px;
+    padding: 12px;
+    width: 95%;
+    max-width: 360px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form_session h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+    color: var(--color-white);
+}
+

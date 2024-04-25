@@ -1,0 +1,10 @@
+.fieldset_filter {
+  display: flex;
+  border: 0px;
+}
+
+.form_filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
